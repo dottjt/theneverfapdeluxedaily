@@ -5,7 +5,7 @@ import path from 'path';
 import { data, media, website } from '@dottjt/datareade';
 
 const main = async () => {
-  const { generateHugoMDFilePodcast } = website;
+  const { generateHugoMDFilesPodcast } = website;
   const { generateModifiedRSS } = media
   const { episodesTNDD } = data;
 
@@ -17,7 +17,7 @@ const main = async () => {
 
   const contentDirectory = path.join(__dirname, '../', 'content');
 
-  await generateHugoMDFilePodcast({
+  await generateHugoMDFilesPodcast({
     episodes: episodesTNDD,
     contentDirectory,
     email: 'neverfapdeluxe@gmail.com'
@@ -34,3 +34,6 @@ const main = async () => {
 };
 
 main();
+
+
+
