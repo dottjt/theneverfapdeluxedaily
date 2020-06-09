@@ -1,6 +1,6 @@
-baseURL = "https://thewritersdaily.juliusreade.com/"
+baseURL = "https://theneverfapdeluxedaily.juliusreade.com/"
 languageCode = "en-gb"
-title = "The Writer's Daily"
+title = "The NeverFap Deluxe Daily"
 theme = "reade"
 
 googleAnalytics = "UA-85083093-2"
@@ -12,7 +12,7 @@ googleAnalytics = "UA-85083093-2"
 [params]
   description = "#YOLO."
   images = ["images/twd/logo_512_non_transparent.png"]
-  title = "The Writer's Daily"
+  title = "The NeverFap Deluxe Daily"
 
 [markup.goldmark.renderer]
   unsafe= true

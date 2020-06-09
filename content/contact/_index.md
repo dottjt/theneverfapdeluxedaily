@@ -6,6 +6,6 @@
   "draft": false
 }
 
-The Writer's Daily is a podcast.
+The NeverFap Deluxe Daily is a podcast.
 
-If you'd like to chat about it: thewritersdailypodcast@gmail.com
+If you'd like to chat about it: neverfapdeluxe@gmail.com
