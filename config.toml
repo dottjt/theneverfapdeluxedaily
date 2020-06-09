@@ -11,7 +11,7 @@ googleAnalytics = "UA-85083093-2"
 
 [params]
   description = "#YOLO."
-  images = ["images/twd/logo_512_non_transparent.png"]
+  images = ["images/tndd/logo_512.png"]
   title = "The NeverFap Deluxe Daily"
 
 [markup.goldmark.renderer]
