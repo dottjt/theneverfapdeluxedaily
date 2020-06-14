@@ -7,8 +7,8 @@ const main = async () => {
   const fakeYouTubeAPIFile = path.join(__dirname, '..', 'fake-youtube-api.txt');
 
   const rootFolder = path.join(__dirname, '..');
-  const audioFolder = path.join(__dirname, 'theneverfapdeluxedailypodcast', 'final-audio');
-  const videoFolder = path.join(__dirname, 'theneverfapdeluxedailypodcast', 'final-video');
+  const audioFolder = path.join(__dirname, '..', '..', 'theneverfapdeluxedaily_podcast', 'final-audio');
+  const videoFolder = path.join(__dirname, '..', '..', 'theneverfapdeluxedaily_podcast', 'final-video');
   const backgroundImageFolder = path.join(__dirname, '..', 'background-image');
   const podcastLogoFile = path.join(__dirname, '..', 'assets', 'logo_400.png');
   const videoFont = '/System/Library/Fonts/Avenir.ttc';
@@ -22,14 +22,14 @@ const main = async () => {
     backgroundImageFolder,
     videoFont,
     podcastLogoFile,
-    episodes: data.episodesTWD,
+    episodes: data.episodesTNDD,
   });
 
   media.uploadYouTube({
     videoFolder,
     credentialsFile,
     fakeYouTubeAPIFile,
-    episodes: data.episodesTWD
+    episodes: data.episodesTNDD
   });
 };
 
