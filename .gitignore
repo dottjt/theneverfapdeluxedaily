@@ -3,3 +3,4 @@ content/episodes/*
 content/episodes_notes/*
 node_modules
 .env
+client_secrets.json

@@ -11,10 +11,8 @@ const main = async () => {
   const audioFolder = path.join(__dirname, '..', '..', 'theneverfapdeluxedaily_podcast', 'final-audio');
   const videoFolder = path.join(__dirname, '..', '..', 'theneverfapdeluxedaily_podcast', 'final-video');
   const backgroundImageFolder = path.join(__dirname, '..', 'background-image');
-  const podcastLogoFile = path.join(__dirname, '..', 'assets', 'logo_400.png');
+  const podcastLogoFile = path.join(__dirname, '..', 'assets', 'logo_400_correct.png');
   const videoFont = '/System/Library/Fonts/Avenir.ttc';
-
-  // console.log(videoFolder);
 
   await media.generateVideo({
     rootFolder,
@@ -35,7 +33,4 @@ const main = async () => {
 };
 
 main();
-
-
-
 

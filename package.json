@@ -5,12 +5,19 @@
   "main": "./util/index.ts",
   "type": "module",
   "scripts": {
-    "tsc": "tsc",
+    "-- -- -- -- START SCRIPTS -- -- -- -- ": "--",
+    "start:dev": "NODE_ENV=development npm run update && npx ts-node-dev --respawn --transpileOnly ./util/index.ts",
+    "start:prod": "NODE_ENV=production npm run update && npx ts-node ./util/index.ts",
+    "-- -- -- -- UPDATE SCRIPTS -- -- -- -- ": "--",
     "update": "npm update @dottjt/datareade @dottjt/mediareade",
-    "dev": "npm run update && ts-node-dev --respawn --transpileOnly ./util/index.ts",
-    "prod": "npm run update && ts-node ./util/index.ts",
-    "videoDev": "npm run update && ts-node-dev --respawn --transpileOnly ./util/generateVideo.ts",
-    "videoProd": "npm run update && ts-node ./util/generateVideo.ts"
+    "-- -- -- -- VIDEO SCRIPTS -- -- -- -- ": "--",
+    "video:dev": "npm run update && ts-node-dev --respawn --transpileOnly ./util/generateVideo.ts",
+    "video:prod": "npm run update && ts-node ./util/generateVideo.ts",
+    "-- -- -- -- PODCAST SCRIPTS -- -- -- -- ": "--",
+    "audio:dev": "npm run update && ts-node-dev --respawn --transpileOnly ./util/generatePodcast.ts",
+    "audio:prod": "npm run update && ts-node ./util/generatePodcast.ts",
+    "-- -- -- -- TEMPLATE SCRIPTS -- -- -- -- ": "--",
+    "template:create": "sh ./util/scripts/createTemplates.sh"
   },
   "repository": {
     "type": "git",
@@ -25,7 +32,7 @@
   "homepage": "https://github.com/dottjt/juliusv6#readme",
   "dependencies": {
     "@dottjt/datareade": "^1.1.27",
-    "@dottjt/mediareade": "^1.1.19",
+    "@dottjt/mediareade": "^1.1.22",
     "dotenv": "^8.2.0",
     "husky": "^4.2.5",
     "ts-node": "^8.10.1",
