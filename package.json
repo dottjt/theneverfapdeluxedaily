@@ -41,7 +41,7 @@
   },
   "husky//": {
     "hooks": {
-      "pre-commit": "cd themes/reade/src && npm run production:build && cd ../../.. && git add .",
+      "pre-commit": "cd themes/reade/src && npm run start:prod && cd ../../.. && git add .",
       "//pre-push": ""
     }
   }
