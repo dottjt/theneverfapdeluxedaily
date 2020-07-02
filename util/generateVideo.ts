@@ -25,6 +25,7 @@ const main = async () => {
   });
 
   upload.uploadYouTube({
+    showTitle: The Writer's Daily,
     videoFolder,
     credentialsFile,
     fakeYouTubeAPIFile,
