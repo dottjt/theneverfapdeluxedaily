@@ -24,25 +24,25 @@ const main = async () => {
     episodes: data.episodesTNDD,
   });
 
-  upload.uploadYouTube({
-    showTitle: "The Writer's Daily",
-    showDescription: (
-`Available on Spotify, iTunes, Castbox, Google Podcasts et al.
+//   upload.uploadYouTube({
+//     showTitle: "The Writer's Daily",
+//     showDescription: (
+// `Available on Spotify, iTunes, Castbox, Google Podcasts et al.
 
-Website: https://theneverfapdeluxedaily.juliusreade.com\n
-YouTube: https://www.youtube.com/channel/UCHnPAVZax7_QMufnSF8Pc9w\n
-Twitter: https://twitter.com/neverfapdeluxe\n
-Facebook: https://facebook.com/neverfapdeluxe\n
-Discord: https://discord.gg/wKh49a6\n
-Instagram: https://instagram.com/neverfap_deluxe\n
-`
-    ),
-    videoFolder,
-    credentialsFile,
-    fakeYouTubeAPIFile,
-    episodes: data.episodesTNDD
-  });
-};
+// Website: https://theneverfapdeluxedaily.juliusreade.com\n
+// YouTube: https://www.youtube.com/channel/UCHnPAVZax7_QMufnSF8Pc9w\n
+// Twitter: https://twitter.com/neverfapdeluxe\n
+// Facebook: https://facebook.com/neverfapdeluxe\n
+// Discord: https://discord.gg/wKh49a6\n
+// Instagram: https://instagram.com/neverfap_deluxe\n
+// `
+//     ),
+//     videoFolder,
+//     credentialsFile,
+//     fakeYouTubeAPIFile,
+//     episodes: data.episodesTNDD
+//   });
+// };
 
 main();
 
