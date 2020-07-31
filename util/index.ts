@@ -6,7 +6,7 @@ import { data, media, website } from '@dottjt/datareade';
 
 const main = async () => {
   const { generateHugoMDFilesPodcast } = website;
-  const { generateModifiedRSS } = media;
+  const { modifyCastboxRSSFeed } = media;
   const { episodesTNDD } = data;
 
   const PODCAST_WEBSITE = 'https://theneverfapdeluxedaily.juliusreade.com/';
@@ -23,7 +23,7 @@ const main = async () => {
     email: 'neverfapdeluxe@gmail.com'
   });
 
-  await generateModifiedRSS({
+  await modifyCastboxRSSFeed({
     inputRSSURL: TNDD_RSS_URL,
     newRSSURL: NEW_RSS_URL,
     outputRSSFile: OUTPUT_RSS_FILE,

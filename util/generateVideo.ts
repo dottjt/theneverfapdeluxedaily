@@ -15,34 +15,34 @@ const main = async () => {
   const podcastLogoFile = path.join(__dirname, '..', 'assets', 'logo_400_correct.png');
   const videoFont = '/System/Library/Fonts/Avenir.ttc';
 
-  await media.generateVideo({
-    rootFolder,
-    audioFolder,
+  // await media.generateVideo({
+  //   rootFolder,
+  //   audioFolder,
+  //   videoFolder,
+  //   backgroundImageFolder,
+  //   videoFont,
+  //   podcastLogoFile,
+  //   episodes: data.episodesTNDD,
+  // });
+
+  upload.uploadYouTube({
+    showTitle: "The NeverFap Deluxe Daily",
+    showDescription: (
+`Available on Spotify, iTunes, Castbox, Google Podcasts et al.
+
+Website: https://theneverfapdeluxedaily.juliusreade.com\n
+YouTube: https://www.youtube.com/channel/UCHnPAVZax7_QMufnSF8Pc9w\n
+Twitter: https://twitter.com/neverfapdeluxe\n
+Facebook: https://facebook.com/neverfapdeluxe\n
+Discord: https://discord.gg/wKh49a6\n
+Instagram: https://instagram.com/neverfap_deluxe\n
+`
+    ),
     videoFolder,
-    backgroundImageFolder,
-    videoFont,
-    podcastLogoFile,
-    episodes: data.episodesTNDD,
+    credentialsFile,
+    fakeYouTubeAPIFile,
+    episodes: data.episodesTNDD
   });
-
-//   upload.uploadYouTube({
-//     showTitle: "The NeverFap Deluxe Daily",
-//     showDescription: (
-// `Available on Spotify, iTunes, Castbox, Google Podcasts et al.
-
-// Website: https://theneverfapdeluxedaily.juliusreade.com\n
-// YouTube: https://www.youtube.com/channel/UCHnPAVZax7_QMufnSF8Pc9w\n
-// Twitter: https://twitter.com/neverfapdeluxe\n
-// Facebook: https://facebook.com/neverfapdeluxe\n
-// Discord: https://discord.gg/wKh49a6\n
-// Instagram: https://instagram.com/neverfap_deluxe\n
-// `
-//     ),
-//     videoFolder,
-//     credentialsFile,
-//     fakeYouTubeAPIFile,
-//     episodes: data.episodesTNDD
-//   });
 
 };
 
