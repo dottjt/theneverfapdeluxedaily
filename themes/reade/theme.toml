@@ -11,5 +11,6 @@ features = ["posts", "shortcodes", "related content", "comments"]
 min_version = "0.54.0"
 
 [author]
-  name = "Julius Reade"
+  # name = "Julius Reade"
+  name = "NeverFap Deluxe"
   homepage = "https://github.com/dottjt"

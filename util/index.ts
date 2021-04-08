@@ -27,7 +27,7 @@ const main = async () => {
     inputRSSURL: TNDD_RSS_URL,
     newRSSURL: NEW_RSS_URL,
     outputRSSFile: OUTPUT_RSS_FILE,
-    authorRSSField: '<author>neverfapdeluxe@gmail.com (Julius Reade)</author>',
+    authorRSSField: '<author>neverfapdeluxe@gmail.com (NeverFap Deluxe)</author>',
     episodeList: episodesTNDD,
     podcastWebsite: PODCAST_WEBSITE
   });
