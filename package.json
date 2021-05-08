@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "./util/index.ts",
-  "type": "module",
   "scripts": {
     "-- -- -- -- START SCRIPTS -- -- -- -- ": "--",
     "start:dev": "NODE_ENV=development npm run update && npx ts-node-dev --respawn --transpileOnly ./util/index.ts",
@@ -33,17 +32,19 @@
   "homepage": "https://github.com/dottjt/juliusv6#readme",
   "dependencies": {
     "@dottjt/datareade": "^1.1.72",
-    "@dottjt/mediareade": "^1.1.32",
     "dotenv": "^8.2.0",
     "husky": "^4.2.5",
-    "ts-node": "^8.10.1",
-    "ts-node-dev": "^1.0.0-pre.44",
+    "ts-node": "^9.1.1",
     "typescript": "^3.8.3"
   },
-  "husky//": {
+  "husky": {
     "hooks": {
-      "pre-commit": "cd themes/reade/src && npm run start:prod && cd ../../.. && git add .",
+      "//pre-commit": "cd themes/reade/src && npm run start && cd ../../.. && git add .",
       "//pre-push": ""
     }
+  },
+  "devDependencies": {
+    "tree-kill": "^1.2.2",
+    "ts-node-dev": "^1.1.6"
   }
 }
